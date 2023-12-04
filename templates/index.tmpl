@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book System</title>
+</head>
+<body>
+    <h1>Books in the System</h1>
+    <ul>
+        {{range .books}}
+            <li>
+                <strong>Title:</strong> {{.Title}}, 
+                <strong>Author:</strong> {{.Author}}, 
+                <strong>ISBN:</strong> {{.ISBN}}
+            </li>
+        {{end}}
+    </ul>
+    <a href="/add">Add a Book</a>
+</body>
+</html>
